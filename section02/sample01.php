@@ -21,6 +21,7 @@
 <!-- ここからPHPを書いていく -->
 <?php
 print("I'm studying \"PHP\"");
+print('Hello World');
 ?>
 </pre>
 </main>

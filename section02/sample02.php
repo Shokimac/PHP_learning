@@ -19,7 +19,7 @@
 <h2>Practice</h2>
 <pre>
 <?php
-print(123+2*5/3);
+print(123+2*5);
 ?>
 </pre>
 </main>

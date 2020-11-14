@@ -20,7 +20,7 @@
 <pre>
 <!-- ここからPHPを書いていく -->
 <?php
-print("I'm studying \"PHP\"");
+print("I'm studying \"PHP\"\n");
 print('Hello World');
 ?>
 </pre>

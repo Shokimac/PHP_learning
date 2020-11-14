@@ -20,7 +20,9 @@
 <pre>
 <?php
 $today = new DateTime();
-print($today->format('G時 i分 s秒')); 
+print($today->format('G時 i分 s秒'));
+// -> この記号は、 DateTimeオブジェクトのインスタンス $today のメソッドを使っていることを表す
+// PHPは、オブジェクト型思考と手続き型が混在している
 ?>
 </pre>
 </main>

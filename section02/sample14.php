@@ -19,12 +19,17 @@
 <h2>Practice</h2>
 <pre>
 <?php
-$news = file_get_contents('../../news_data/news.txt');
+// ファイル読み込み関数
+$news = file_get_contents('../news_data/news.txt');
 $news .= "2018-06-03 ニュースを追加しました";
-file_put_contents('../../news_data/news.txt', $news);
+// .= は、$x += 5; と書くのと同じように、$x = $x . 'add' を $x .= 'add' と文字列に対して書くようにできる
+file_put_contents('../news_data/news.txt', $news);
 
 print($news);
 
+// ファイルを読み込んで表示させるだけなら readfile()
+// 書き換えや処理を行うなどは出来ない
+// readfile('../news_data/news.txt');
 ?>
 </pre>
 </main>

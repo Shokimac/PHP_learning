@@ -19,11 +19,13 @@
 <h2>Practice</h2>
 <pre>
 <?php
-$success = file_put_contents('../../news_data/news.txt', '2018-06-01 ホームページをリニューアルしました');
+// ファイルに書き込むファンクション
+$success = file_put_contents('../news_data/news.txt', '2018-06-01 ホームページをリニューアルしました。');
+// この条件式は $success === true の省略にあたる。
 if ($success) {
     print('ファイルへの書き込みが完了しました');
-} else {
-    print('書き込みに失敗しました。フォルダの権限などを確認してください。');
+}else{
+    print('書き込みに失敗しました。');
 }
 ?>
 </pre>

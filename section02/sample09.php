@@ -19,6 +19,7 @@
 <h2>Practice</h2>
 <pre>
 <?php
+// 連想配列は キーとバリューで構成される
 $fruits = [
     'apple'=>'りんご',
     'grape'=>'ぶどう',
@@ -27,9 +28,17 @@ $fruits = [
     'peach'=>'もも'
 ];
 
-foreach ($fruits as $english => $japanese) {
-    print ($english . ':' . $japanese . "\n");
+// 連想配列を繰り返し処理するときは、foreach文を使う
+// foreach($fruits as $val) {
+//     print($val . "\n");
+// }
+
+// 連想配列のキーとバリューを取り出したいときは、以下のように書く
+// $english にキー情報, $japanese にバリュー値が入る
+foreach($fruits as $english => $japanese) {
+    print($english . ':' . $japanese . "\n");
 }
+
 ?>
 </pre>
 </main>

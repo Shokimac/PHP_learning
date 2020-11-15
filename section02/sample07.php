@@ -19,7 +19,15 @@
 <h2>Practice</h2>
 <pre>
 <?php
+// string to time = 文字列をタイムスタンプに変換する関数
+// for($i = 1; $i <= 365; $i++){
+//     print(date('n/j(D)', strtotime("+" . $i . "day")) . "\n");
+// }
 
+// :から始めてendforで締める書き方は分かりやすい。PHP独特??
+for($i = 1; $i <= 365; $i++):
+    print(date('n/j(D)', strtotime("+" . $i . "day")) . "\n");
+endfor;
 ?>
 </pre>
 </main>

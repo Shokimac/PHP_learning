@@ -19,9 +19,7 @@
 <h2>Practice</h2>
 <pre>
 <?php
-for($i = 1; $i <= 365; $i++){
-    print($i . "\n");
-}
+
 ?>
 </pre>
 </main>

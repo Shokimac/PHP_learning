@@ -19,15 +19,10 @@
 <h2>Practice</h2>
 <pre>
 <?php
-// if (date('G') < 9) {
-//     print('※ 現在受付時間外です');
-// } else {
-//     print('ようこそ');
-// }
-
-$x = 1; // 0=false, 0以外=true
-if ($x === 0) {
-    print('xは0です');
+if(date('G') < 15) {
+    print('※現在は受付時間外です。');
+}else{
+    print('ようこそ');
 }
 ?>
 </pre>

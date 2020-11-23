@@ -19,12 +19,16 @@
 <h2>Practice</h2>
 <pre>
 <?php
+// JSON: JavaScript Object Notation (JSのオブジェクトで使える表記法)
+// 最近は、JSONがXMLよりも一般的になりつつある
+// 利点は、:を使って簡潔に書けて、各データの中身が分かりやすい。
 $file = file_get_contents('https://h2o-space.com/feed/json/');
+// JSONのデータを使うには以下を使って、PHPのオブジェクト化する
 $json = json_decode($file);
 
-foreach ($json->items as $item):
+foreach($json->items as $item):
 ?>
-・<a href="<?php print($item->url); ?>"><?php print($item->title); ?></a>
+<a href="<?php print($item->url)?>"><?php print($item->title); ?></a>
 <?php
 endforeach;
 ?>

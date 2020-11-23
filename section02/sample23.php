@@ -18,15 +18,27 @@
 <main>
 <h2>Practice</h2>
 
-<table>
+<!-- 剰余算の特徴は、連続した数字を同じ数字で割った場合に、2で剰余算をすれば 0 1 0 1 と並び 3で剰余算すれば 0 1 2 0 1 2 と並ぶ -->
+<!-- <pre>
     <?php
-    for ($i=1; $i<=100; $i++) {
-        if ($i % 3) {
-            print('<tr style="background-color: #ccc">');
+    // $week = array('金', '土', '日', '月', '火', '水', '木');
+    // for($i = 1; $i < 31; $i++) {
+    //     // 7を使った剰余算を使うと、1週間毎に曜日を表示する事ができる。
+    //     print($week[$i%7] . "\n");
+    // }
+    ?>
+</pre> -->
+
+<!-- 剰余算の特徴を活かして、ストライプ柄のテーブルを作る事ができる -->
+<table>
+    <?php 
+    for ($i=1; $i<=10; $i++){
+        if ($i % 2) {
+            print('<tr style="background-color: #ccc;">');
         } else {
             print('<tr>');
         }
-        print('<td>' . $i . '行目</td>');
+        print('<td>' . $i . '行目');
         print('</tr>');
     }
     ?>

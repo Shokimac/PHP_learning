@@ -19,10 +19,15 @@
 <h2>Practice</h2>
 <pre>
 <?php
+// XML: Extensible Markup Language 拡張できるマークアップ言語
+// HTML: HyperText Markup Language 
+// RSS や 外部の更新された情報に対して、XMLを取得することで簡単かつ自動的にページ更新ができる
+
 $xmlTree = simplexml_load_file('https://h2o-space.com/feed/');
-foreach ($xmlTree->channel->item as $item):
+foreach($xmlTree->channel->item as $item):
 ?>
-・<a href="<?php print($item->link); ?>"><?php print($item->title); ?></a>
+・<a href="<?php print($item->link); ?>">
+<?php print($item->title); ?></a>
 <?php
 endforeach;
 ?>

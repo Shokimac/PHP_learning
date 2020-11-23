@@ -1,3 +1,4 @@
+<!-- ページ毎に session_start が必要 -->
 <?php session_start(); ?>
 <!doctype html>
 <html lang="ja">
@@ -19,7 +20,9 @@
 <main>
 <h2>Practice</h2>
 <pre>
-    <?php print($_SESSION['session_message']); ?>
+    <?php 
+    print($_SESSION['session_message']);
+    ?>
 </pre>
 </main>
 </body>    

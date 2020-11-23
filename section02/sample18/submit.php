@@ -18,6 +18,7 @@
 <main>
 <h2>Practice</h2>
 <pre>
+    <!-- inputタグのvalue属性値が送られる -->
     <?php print(htmlspecialchars($_POST['gender'], ENT_QUOTES)); ?>
 </pre>
 </main>

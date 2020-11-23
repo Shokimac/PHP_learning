@@ -18,8 +18,7 @@
 <main>
 <h2>Practice</h2>
 <pre>
-    <?php
-    foreach ($_POST['reserve'] as $reserve) {
+    <?php foreach($_POST['reserve'] as $reserve){
         print(htmlspecialchars($reserve, ENT_QUOTES) . ' ');
     }
     ?>
